@@ -6,12 +6,12 @@
 	<string>English</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
-	<key>CFBundleName</key>
-	<string>${PRODUCT_NAME}</string>
 	<key>CFBundleIdentifier</key>
-	<string>${MODULE_NAME}</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleSignature</key>
@@ -26,6 +26,8 @@
 			<string>${MODULE_NAME}</string>
 			<key>IOClass</key>
 			<string>${PRODUCT_NAME}</string>
+			<key>IOHardwareModel</key>
+			<string>Cirrus CL-GD5446 </string>
 			<key>IOMatchCategory</key>
 			<string>IOFramebuffer</string>
 			<key>IOPCIPrimaryMatch</key>
@@ -34,12 +36,10 @@
 			<integer>30100</integer>
 			<key>IOProviderClass</key>
 			<string>IOPCIDevice</string>
-			<key>IOUserClientClass</key>
-			<string>VMQemuVGAClient</string>
 			<key>IOSourceVersion</key>
 			<string>1.0.0.0</string>
-			<key>IOHardwareModel</key>
-			<string>Cirrus CL-GD5446 </string>
+			<key>IOUserClientClass</key>
+			<string>VMQemuVGAClient</string>
 		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
